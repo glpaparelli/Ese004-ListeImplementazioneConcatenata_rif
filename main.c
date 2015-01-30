@@ -101,7 +101,7 @@ int main(int argc, char** argv) {
         assertSuccessfullExecution(9000+i, ret);
     }
     
-    assertSize(90, list, 0);
+   assertSize(90, list, 0);
     
     
     // Operazioni 100
@@ -109,8 +109,8 @@ int main(int argc, char** argv) {
         ret = LLInsertAtEnd(&list, 10+i);
         assertSuccessfullExecution(10000+i, ret);
     }
-    assertSize(100, list, 10);
-    for(i=0; i<10; i++)
+ //   assertSize(100, list, 10);
+   for(i=0; i<10; i++)
         assertKey(101, list, i, 10+i);
     
     // Operazioni 110
